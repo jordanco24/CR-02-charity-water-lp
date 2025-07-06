@@ -1,47 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Charity: Water - Landing Page</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-image: url('img/Image.jpg'); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      font-weight: bold;
+      margin-bottom: 1.2rem;
+    }
+
+    h1 span {
+      display: block;
+    }
+
+    .subtext {
+      font-family: monospace;
+      color: #ff8b61;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .cta-button {
+      background-color: #671d0e;
+      color: #e9e2dd;
+      padding: 0.8rem 1.6rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-family: Georgia, serif;
+    }
+
+    .cta-button:hover {
+      background-color: #1b71ab;
+    }
+
+    .logo {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      z-index: 3;
+      color: white;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .logo img {
+      height: 30px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .subtext {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <div class="overlay"></div>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
+  <div class="logo">
+    <span>charity: water</span>
+    <img src="img/cw_logo.png" alt="logo" />
+  </div>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <div class="content">
+    <h1>
+      YOUR IMPACT. <br>
+      <span>TRACKED, TRUSTED,</span>
+      <span>TRANSFORMATIONAL.</span>
+    </h1>
+    <p class="subtext">
+      JOIN THE NEXT GENERATION OF NONPROFIT LEADERS TURNING TRANSPARENCY INTO GLOBAL CHANGE. SEE WHERE YOUR DONATION GOES AND WHO IT HELPS!
+    </p>
+    <button class="cta-button">Make a change now.</button>
+  </div>
+
 </body>
 </html>
